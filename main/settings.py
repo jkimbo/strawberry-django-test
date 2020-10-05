@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+from typing import List
 import os
 from pathlib import Path
 
@@ -26,7 +27,7 @@ SECRET_KEY = "4kn^w-us@2nj*g@pyy9a&ml-87s+oo9j8$mc!#%-!_*+s)kis1"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS: List[str] = []
 
 
 # Application definition
